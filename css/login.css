@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+.regLeft {
+    float: left;
+    width: 375px;
+    height: 100%;
+}
+
+.regLeft img {
+    width: 375px;
+}
+
+.regRight {
+    height: 100%;
+    overflow: auto;
+}
+
+.regRight .top {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+.regRight .top .mi-header {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.regRight .top .mi-header .mi-title {
+    float: left;
+    height: 40px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #333;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.regRight .top .mi-header .mi-title img {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+}
+
+.regRight .top .mi-header .mi-nav {
+    float: right;
+}
+
+.regRight .top .mi-header .mi-nav .mi-nav__item {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #838383;
+    line-height: 40px;
+}
+
+.regRight .top .mi-header .mi-nav .mi-nav__divider {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 14px;
+    width: 0;
+    border-right: 1px solid #ddd;
+}
+
+.title {
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-image: url(../images/mi-logo.png);
+    background-color: #FF6700;
+    background-position: 50%;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.top h4 {
+    display: block;
+    color: #333;
+    width: 786px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.middle {
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.middle form {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.middle .middleBox {
+    text-align: left;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 40px 45px;
+    /* position: relative; */
+    margin: 0 auto 80px;
+    /* min-width: 450px; */
+    box-shadow: 0 20px 50px 0 hsl(0deg 0% 64% / 10%);
+}
+
+.middle input {
+    border: 1px solid #757575;
+}
+
+.p {
+    color: red;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.c {
+    color: red;
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.l {
+    font-size: 18px;
+}
+
+.d {
+    display: inline;
+}
+
+.i {
+    height: 30px;
+    width: 300px;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: absolute;
+    left: 725px;
+    bottom: 20px;
+    color: #999;
+    font-size: 16px;
+}
+
+.footer li {
+    float: left;
+}
+
+.footer li a,
+.footer li span {
+    color: #757575;
+    font-size: 14px;
+}
+
+.footer li a {
+    display: inline-block;
+    height: 19px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.footer li a:hover {
+    color: #FF6700;
+}

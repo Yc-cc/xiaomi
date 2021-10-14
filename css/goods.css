@@ -1,0 +1,746 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.nav-bar {
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    height: 63px;
+    border: 1px solid rgb(224, 224, 224);
+    border-right: 0;
+    border-left: 0;
+}
+
+#fixed {
+    margin-top: 0;
+    position: fixed;
+    top: -65px;
+    transition: all .3s linear;
+    z-index: 100;
+}
+
+#fixed.active {
+    top: 0;
+}
+
+.nav-bar .container {
+    width: 1226px;
+    height: 60px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.nav-bar .container .proj-name {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-bar .container .right {
+    float: right;
+    /* display: inline-block; */
+    height: 30px;
+    margin-top: 18px
+}
+
+.nav-bar .container .right a:not(.buy-now) {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #212121;
+}
+
+.nav-bar .container .right a:not(.buy-now):hover {
+    color: #ff6700!important;
+}
+
+.nav-bar .container .right .cur {
+    color: #ff6700!important;
+}
+
+.nav-bar .container .right .separator {
+    color: #e0e0e0;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 3.5px;
+}
+
+.nav-bar .container .right .buy-now {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    width: 118px;
+    font-size: 12px;
+    margin-left: 3.5px;
+    text-align: center;
+    border: 1px solid rgb(255, 103, 0);
+    background: #ff6700;
+    color: #fff;
+}
+
+.nav-bar .container .right .buy-now:hover {
+    background: #f25807;
+    border-color: #f25807;
+    transition: all .3s;
+}
+
+.container {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.top_app {
+    border-top: 1px solid gainsboro;
+    height: 1350px;
+}
+
+.top_app .container h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #424242;
+    float: left;
+}
+
+.top_app .container .left {
+    float: left;
+    margin-left: 5px;
+    font-size: 12px;
+    margin-top: 21px;
+}
+
+.top_app .container .right {
+    font-size: 14px;
+    float: right;
+    margin: 17px 0 0 0;
+}
+
+.top_app .container .separator {
+    margin: 0 .5em;
+    color: #424242;
+}
+
+.top_app .container .con a {
+    color: #616161;
+}
+
+.top_app .container .con a:hover {
+    color: #ff6700;
+}
+
+.top_app .container .main {
+    float: left;
+    /* width: 1226px;
+    height: 400px; */
+}
+
+.top_app .container .main .big_box {
+    width: 352px;
+    height: 352px;
+    margin: 50px 0px 0px 50px;
+    border: 1px solid #ccc;
+    position: relative;
+    float: left;
+}
+
+.top_app .container .main .big {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 360px;
+    overflow: hidden;
+    display: none;
+    z-index: 100;
+}
+
+.top_app .container .main .shopList {
+    margin-top: 20px;
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 70px;
+}
+
+.top_app .container .main .shopList .shopListL {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.top_app .container .main .shopList .shopListL img {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin: auto;
+}
+
+.top_app .container .main .shopList .shopListR {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    right: 0;
+}
+
+.top_app .container .main .shopList .shopListR img {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin: auto;
+}
+
+.top_app .container .main .shopList ul {
+    margin: auto;
+    position: absolute;
+    width: 999999px;
+    height: 70px;
+}
+
+.top_app .container .main .shopList ul li {
+    width: 80px;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+}
+
+.top_app .container .main .shopList ul li img {
+    width: 64px;
+    height: 64px;
+    border: 1px solid gainsboro;
+    float: left;
+    padding: 2px;
+    text-align: center;
+}
+
+.top_app .container .main .shopList ul .checked img {
+    border-color: #f25807;
+}
+
+.top_app .container .main .shopList #smallImg {
+    float: left;
+    position: relative;
+    width: 82%;
+    height: 70px;
+    overflow: hidden;
+    margin-left: 9%;
+}
+
+.top_app .container .main .big img {
+    position: absolute;
+}
+
+.top_app .container .main .mask {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 0, 0.4);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: move;
+    display: none;
+}
+
+.top_app .container .main .small {
+    position: relative;
+}
+
+.top_app .container .main .product-con {
+    margin-left: 500px;
+}
+
+.top_app .container .main .product-con h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: #212121;
+}
+
+.top_app .container .main .product-con .sale-desc {
+    color: #b0b0b0;
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+.top_app .container .main .product-con .company-info {
+    color: #ff6700;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.top_app .container .main .product-con .price-info {
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    color: #ff6700;
+    padding: 12px 0 10px;
+    margin-top: 10px;
+}
+
+.top_app .container .main .product-con .address-box {
+    margin: 20px 0;
+}
+
+.top_app .container .main .product-con .buy-option .title {
+    font-size: 18px;
+}
+
+.top_app .container .main .product-con .buy-option ul {
+    width: auto;
+    height: 108px;
+}
+
+.top_app .container .main .product-con .buy-option ul .active {
+    color: #ff6700;
+    border-color: #ff6700;
+}
+
+.top_app .container .main .product-con .buy-option ul .active a {
+    color: #ff6700;
+}
+
+.top_app .container .main .product-con .buy-option li {
+    margin-right: 12px;
+    margin-top: 10px;
+    line-height: 42px;
+    height: 42px;
+    position: relative;
+    border: 1px solid #e0e0e0;
+    list-style: none;
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    float: left;
+    width: 292px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.top_app .container .main .product-con .product-address {
+    padding: 30px 50px;
+    position: relative;
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+}
+
+.top_app .container .main .product-con .buy-box-child1 {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.top_app .container .main .product-con .buy-box-child2 {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.top_app .container .main .product-con .buy-option .jian {
+    width: 150px;
+    height: 50px;
+    background-color: #ff6700;
+    border: none;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.top_app .container .main .product-con .buy-option .clearfix-number input {
+    display: block;
+    width: 25px;
+    height: 46px;
+    line-height: 50px;
+    float: left;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.top_app .container .main .product-con .buy-option .jia {
+    width: 150px;
+    height: 50px;
+    background-color: #ff6700;
+    border: none;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.top_app .container .main .product-con .selected-list {
+    background: #f9f9fa;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.top_app .container .main .product-con .selected-list li .shopPric {
+    float: right;
+}
+
+.top_app .container .main .product-con .selected-list .total-price {
+    color: #ff6700;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.top_app .container .main .product-con .btn-box {
+    margin: 10px 0 20px 0;
+}
+
+.top_app .container .main .product-con .btn-box .sale-btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.top_app .container .main .product-con .btn-box .sale-btn .btn {
+    display: inline-block;
+    width: 298px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.top_app .container .main .product-con .btn-box .sale-btn .btn-primary {
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+
+.top_app .container .main .product-con .btn-box .favorite-btn {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.top_app .container .main .product-con .btn-box .favorite-btn .btn-like {
+    display: block;
+    width: 140px;
+    height: 52px;
+    line-height: 52px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #b0b0b0;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    font-size: 16px;
+    position: relative;
+    background: #b0b0b0;
+    color: #fff;
+}
+
+.top_app .container .main .product-con .after-sale-info span {
+    display: inline-block;
+}
+
+.top_app .container .main .product-con .after-sale-info span a {
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    cursor: default;
+    white-space: nowrap;
+    color: #b0b0b0;
+}
+
+.yc {
+    color: #ff6700;
+    border-color: #ff6700;
+}
+
+
+/* 评价模块 */
+
+.comment-mid {
+    width: 1226px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.comment-mid .mid-left {
+    width: 792px;
+    float: left;
+}
+
+.comment-mid .mid-left .l-top {
+    height: 50px;
+}
+
+.comment-mid .mid-left .l-top .t-title {
+    height: 50px;
+    line-height: 40px;
+    font-size: 24px;
+    color: gray;
+    float: left;
+}
+
+.comment-mid .mid-left .l-top .t-choose {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: gray;
+    float: right;
+}
+
+.comment-mid .mid-left .l-content {
+    width: 100%;
+}
+
+.comment-mid .mid-left .l-content .common {
+    width: 100%;
+    background: #fff;
+    margin: 0 0 15px;
+    padding: 40px 40px 46px 103px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 15px;
+}
+
+.comment-mid .mid-left .l-content .port {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 47px;
+    height: 47px;
+    display: block;
+}
+
+.comment-mid .mid-left .l-content .port img {
+    width: 100%;
+}
+
+.comment-mid .mid-left .l-content .timea {
+    width: 100%;
+    height: 44px;
+}
+
+.comment-mid .mid-left .l-content .timea .tit {
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    _zoom: 1;
+    font-size: 16px;
+    color: #8d665a;
+    display: block;
+}
+
+.comment-mid .mid-left .l-content .timea .times {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.comment-mid .mid-left .l-content .lovea {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 16px;
+    color: #ff7b33;
+    width: 200px;
+    text-align: right;
+    height: 26px;
+}
+
+.comment-mid .common .des {
+    display: inline-block;
+    margin-top: 8px;
+    color: #5e5e5e;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.comment-mid .mid-left .l-content .images {
+    margin-top: 14px;
+}
+
+.comment-mid .mid-left .l-content .images .image.big {
+    width: 330px;
+    height: 330px;
+}
+
+.comment-index .comment-mid .mid-left .l-content .images img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.comment-mid .mid-left .l-content .reply {
+    margin-top: 14px;
+    position: relative;
+}
+
+.comment-mid .mid-left .l-content .reply input {
+    width: 520px;
+    padding: 10px 0 10px 20px;
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    outline: none;
+    color: #b0b0b0;
+    border: 1px solid #e0e0e0;
+}
+
+.comment-mid .mid-left .l-content .reply .btn {
+    width: 100px;
+    height: 43px;
+    line-height: 43px;
+    position: absolute;
+    left: 540px;
+    top: 0;
+    z-index: 10;
+    color: #757575;
+    border: 1px solid #e0e0e0;
+    border-left: none;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.comment-mid .mid-left .l-content .commentList {
+    margin-top: 46px;
+}
+
+.comment-mid .mid-left .l-content .commentList .comments {
+    position: relative;
+    margin-bottom: 46px;
+    padding-left: 47px;
+}
+
+.comment-mid .mid-left .l-content .commentList img {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.comment-mid .mid-left .l-content .commentList .comments a {
+    display: block;
+}
+
+.comment-mid .mid-left .l-content .commentList .c-right .c-t {
+    margin-bottom: 3px;
+    font-size: 14px;
+    line-height: 22px;
+    display: block;
+}
+
+.comment-mid .mid-left .l-content .commentList .c-right .c-b {
+    margin-bottom: 3px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.comment-mid .mid-left .more {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #ff6700;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.comment-mid .mid-right {
+    width: 400px;
+    float: right;
+    margin: 65px 0 30px;
+    padding: 22px 30px 40px;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.comment-mid .mid-right .m-t {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.comment-mid .mid-right .m-t span {
+    font-size: 60px;
+    color: #ff6700;
+}
+
+.comment-mid .mid-right .m-b {
+    height: 22px;
+    margin-top: 10px;
+    background: #f1f2f6;
+    position: relative;
+}
+
+.comment-mid .mid-right .m-b i {
+    height: 22px;
+    line-height: 22px;
+    background: #83c44e;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    overflow: hidden;
+    _zoom: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-style: normal;
+}
+
+.comment-mid .mid-right .m-b span {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+.comment-mid .goTop {
+    display: none;
+    margin-top: 15px;
+    width: 110px;
+    height: 110px;
+    background: #fff url(//c1.mifile.cn/f/i/17/comment2017/arrow.png) 50% no-repeat;
+    cursor: pointer;
+    position: fixed;
+    left: 50%;
+    margin-left: 193px;
+    bottom: 0;
+    z-index: 11;
+}
+
+.footer {
+    margin-top: 50px;
+}

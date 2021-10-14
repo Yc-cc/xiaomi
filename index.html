@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index_style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>小米商城-首页</title>
+</head>
+
+<body>
+    <!-- 头部部分开始 -->
+    <div class="header">
+        <!-- 头部中间部分的列表 -->
+        <div class="header_middle">
+            <div class="w">
+                <ul>
+                    <li><a href="#">小米商城</a></li>
+                    <li><a href="#">MIUI</a></li>
+                    <li><a href="#">IOT</a></li>
+                    <li><a href="#">云服务</a></li>
+                    <li><a href="#">金融</a></li>
+                    <li><a href="#">有品</a></li>
+                    <li><a href="#">小爱开放平台</a></li>
+                    <li><a href="#">企业团购</a></li>
+                    <li><a href="#">资质证照</a></li>
+                    <li><a href="#">协议规则</a></li>
+                    <li><a href="#">下载APP</a></li>
+                    <li><a href="#">智能生活</a></li>
+                    <li><a href="#">Select Location</a></li>
+                    <li class="right"><a href="register.html">登录</a></li>
+                    <li id="regLi" data-toggle="modal" data-target="#myModal"><a href="#none">注册</a></li>
+                    <li><a href="message.html">消息通知</a></li>
+                    <li class="shopping"><a href="shopping.html">购物车<span class="shopNum">0</span></a>
+                        <div class="shopHide">
+                            <ul class="hideUl">
+                                <!-- <li class="hideLi">
+                                    <img src="" alt=""><span class="hideName"></span><span class="hideRam"></span><span class="hideColor"></span><span class="hidePrice"></span><span class="hideNum"></span>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="users">你好<a href="./register.html">请登录</a></li>
+                    <li class="out"><a href="./register.html">注销</a></li>
+                    <!-- <div class="shopHide">
+                        <ul class="hideUl">
+                            <li class="hideLi">
+                                <img src="" alt=""><span class="hideName"></span><span class="hideRam"></span><span class="hideColor"></span><span class="hidePrice"></span><span class="hideNum"></span>
+                            </li>
+                        </ul>
+                    </div> -->
+                </ul>
+                <!-- 模态框 -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">协议说明</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div id="J_siteAgreementContent">
+                                    <div class="desc J_agreeTabs"><span class="agree-tab">《小米商城用户协议》</span>、<span class="agree-tab">《小米商城隐私政策》</span>、
+                                        <span class="agree-tab">《小米帐号用户协议》</span>、<span class="agree-tab">《小米帐号隐私政策》</span>请您仔细阅读以上协议，其中有对您权利义务的特别约定等重要条款，同意后方可使用本软件</div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">不同意</button>
+                                <button type="button" class="btn btn-primary">同意</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 头部logo部分 -->
+        <div class="top_logo w">
+            <a href="#" class="logo"></a>
+            <ul class="list">
+                <li><a href="#">小米手机</a>
+                    <div class="item-children">
+                        <div class="container">
+                            <ul class="children-list clearfix">
+                                <li>
+                                    <a href="goods.html?src=./images/shop1.jpg;name=Xiaomi Civi;price=2599">
+                                        <div class="figure figure-thumb"><img src="./images/item.jpg" alt="Xiaomi Civi" width="160" height="110"></div>
+                                        <div class="title">Xiaomi Civi</div>
+                                        <p class="price">2599元起</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop2.jpg;name=Xiaomi MIX 4;price=4999">
+                                        <div class="figure figure-thumb"><img src="./images/item2.jpg" alt="Xiaomi MIX 4" width="160" height="110"></div>
+                                        <div class="title">Xiaomi MIX 4</div>
+                                        <p class="price">4999元起</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop3.jpg;name=Xiaomi MIX FOLD;price=9999">
+                                        <div class="figure figure-thumb"><img src="./images/item3.jpg" alt="小米MIX FOLD" width="160" height="110"></div>
+                                        <div class="title">小米MIX FOLD</div>
+                                        <p class="price">9999元起</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop4.jpg;name=Xiaomi 11 Ultra;price=5499">
+                                        <div class="figure figure-thumb"><img src="./images/item4.jpg" alt="小米11 Ultra" width="160" height="110"></div>
+                                        <div class="title">小米11 Ultra</div>
+                                        <p class="price">5499元起</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop5.jpg;name=Xiaomi 11 Pro;price=4499">
+                                        <div class="figure figure-thumb"><img src="./images/item5.jpg" alt="小米11 Pro" width="160" height="110"></div>
+                                        <div class="title">小米11 Pro</div>
+                                        <p class="price">4499元起</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop6.jpg;name=Xiaomi 11 youngth;price=2099">
+                                        <div class="figure figure-thumb"><img src="./images/item6.jpg" alt="小米11 青春版" width="160" height="110"></div>
+                                        <div class="title">小米11 青春版</div>
+                                        <p class="price">2099元起</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Redmi红米</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">笔记本</a></li>
+                <li><a href="#">家电</a></li>
+                <li><a href="#">路由器</a></li>
+                <li><a href="#">智能硬件</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">社区</a></li>
+            </ul>
+            <a href="#" class="search_btn"></a>
+            <div class="search">
+                <input type="search" class="search-text" placeholder="搜一下吧">
+                <ul class="search-res">
+                </ul>
+            </div>
+
+        </div>
+        <!-- 头部app部分 -->
+        <div class="top_app w">
+            <!-- 轮播图效果 start -->
+            <div id="box_autoplay">
+                <div class="box_autoplay_list">
+                    <ul>
+                        <li><img src="images/app_banner.webp.jpg" style="width: 1226px; height: 460px;" /></li>
+                        <li><img src="images/app_banner.webp2.jpg" style="width: 1226px; height: 460px;" /></li>
+                        <li><img src="images/app_banner.webp3.webp.jpg" style="width: 1226px; height: 470px;" /></li>
+                        <li><img src="images/app_banner.webp4.webp.jpg" style="width: 1226px; height: 470px;" /></li>
+                    </ul>
+                    <ol>
+
+                    </ol>
+                </div>
+                <div id="arr">
+                    <span id="left">&lt;</span>
+                    <span id="right">&gt;</span>
+                </div>
+            </div>
+            <!-- 轮播图效果 end -->
+            <div class="app_list">
+                <ul class="leftUl">
+                    <li class="rightLi"><a href="#">手机 电话卡</a>
+                        <div class="children clearfix children-col-4">
+                            <ul class="children-list children-list-col children-list-col-1">
+                                <li>
+                                    <a href="goods.html?src=./images/shop1.jpg;name=Xiaomi Civi;price=2599"><img src="./images/left.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi Civi</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop2.jpg;name=Xiaomi MIX 4;price=4999"><img src="./images/left2.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi MIX 4</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop3.jpg;name=Xiaomi MIX FOLD;price=9999"><img src="./images/left3.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi MIX FOLD</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop4.jpg;name=Xiaomi 11 Ultra;price=5499"><img src="./images/left4.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 Ultra</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop5.jpg;name=Xiaomi 11 Pro;price=4499"><img src="./images/left5.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 Pro</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop6.jpg;name=Xiaomi 11 youngth;price=2099"><img src="./images/left6.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 young</span></a>
+                                </li>
+                            </ul>
+                            <ul class="children-list children-list-col children-list-col-2">
+                                <li>
+                                    <a href="goods.html?src=./images/shop1.jpg;name=Xiaomi Civi;price=2599"><img src="./images/left.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi Civi</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop2.jpg;name=Xiaomi MIX 4;price=4999"><img src="./images/left2.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi MIX 4</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop3.jpg;name=Xiaomi MIX FOLD;price=9999"><img src="./images/left3.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi MIX FOLD</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop4.jpg;name=Xiaomi 11 Ultra;price=5499"><img src="./images/left4.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 Ultra</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop5.jpg;name=Xiaomi 11 Pro;price=4499"><img src="./images/left5.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 Pro</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop6.jpg;name=Xiaomi 11 youngth;price=2099"><img src="./images/left6.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 young</span></a>
+                                </li>
+                            </ul>
+                            <ul class="children-list children-list-col children-list-col-3">
+                                <li>
+                                    <a href="goods.html?src=./images/shop1.jpg;name=Xiaomi Civi;price=2599"><img src="./images/left.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi Civi</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop2.jpg;name=Xiaomi MIX 4;price=4999"><img src="./images/left2.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi MIX 4</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop3.jpg;name=Xiaomi MIX FOLD;price=9999"><img src="./images/left3.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi MIX FOLD</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop4.jpg;name=Xiaomi 11 Ultra;price=5499"><img src="./images/left4.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 Ultra</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop5.jpg;name=Xiaomi 11 Pro;price=4499"><img src="./images/left5.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 Pro</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop6.jpg;name=Xiaomi 11 youngth;price=2099"><img src="./images/left6.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 young</span></a>
+                                </li>
+                            </ul>
+                            <ul class="children-list children-list-col children-list-col-4">
+                                <li>
+                                    <a href="goods.html?src=./images/shop1.jpg;name=Xiaomi Civi;price=2599"><img src="./images/left.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi Civi</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop2.jpg;name=Xiaomi MIX 4;price=4999"><img src="./images/left2.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi MIX 4</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop3.jpg;name=Xiaomi MIX FOLD;price=9999"><img src="./images/left3.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi MIX FOLD</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop4.jpg;name=Xiaomi 11 Ultra;price=5499"><img src="./images/left4.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 Ultra</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop5.jpg;name=Xiaomi 11 Pro;price=4499"><img src="./images/left5.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 Pro</span></a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop6.jpg;name=Xiaomi 11 youngth;price=2099"><img src="./images/left6.png" width="40" height="40" alt="" class="thumb"><span class="text">Xiaomi 11 young</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="rightLi"><a href="#">电视 盒子</a></li>
+                    <li class="rightLi"><a href="#">笔记本 显示器</a></li>
+                    <li class="rightLi"><a href="#">家电 插线板</a></li>
+                    <li class="rightLi"><a href="#">出行 穿戴</a></li>
+                    <li class="rightLi"><a href="#">智能 路由器</a></li>
+                    <li class="rightLi"><a href="#">电源 配件</a></li>
+                    <li class="rightLi"><a href="#">健康 儿童</a></li>
+                    <li class="rightLi"><a href="#">耳机 音箱</a></li>
+                    <li class="rightLi"><a href="#">生活 箱包</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="app_bottom w">
+            <div class="first">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/app_btn1.png" alt="">小米秒杀</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/app_btn2.png" alt="">企业团购</a>
+                    </li>
+                    <li class="first3">
+                        <a href="#"><img src="images/app_btn3.png" alt="">F码通道</a>
+                    </li>
+                    <li class="first4">
+                        <a href="#"><img src="images/app_btn4.png" alt="">米粉卡</a>
+                    </li>
+                    <li class="first5">
+                        <a href="#"><img src="images/app_btn5.png" alt="">以旧换新</a>
+                    </li>
+                    <li class="first6">
+                        <a href="#"><img src="images/app_btn6.png" alt="">话费充值</a>
+                    </li>
+                </ul>
+                <a href="#"></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="goods.html?src=./images/shop7.jpg;name=Xiaomi 11 Ultra;price=5499"><img src="images/app_bottom1.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="goods.html?src=./images/shop8.jpg;name=Xiaomi 11;price=3599"><img src="images/app_bottom2.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="goods.html?src=./images/shop9.jpg;name=Xiaomi Pro;price=5499"><img src="images/app_bottom3.jpg" alt=""></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- 头部部分结束 -->
+
+
+    <!-- 中间部分开始 -->
+    <!-- 右侧悬浮工具栏 开始-->
+    <div class="right_float">
+        <a href="#" class="item">
+            <div class="pic pic1"></div>
+            <div class="pic_text">手机APP</div>
+        </a>
+        <a href="#" class="item">
+            <div class="pic pic2"></div>
+            <div class="pic_text">个人中心</div>
+        </a>
+        <a href="#" class="item">
+            <div class="pic pic3"></div>
+            <div class="pic_text">售后服务</div>
+        </a>
+        <a href="#" class="item">
+            <div class="pic pic4"></div>
+            <div class="pic_text">人工客服</div>
+        </a>
+        <a href="shopping.html" class="item">
+            <div class="pic pic5"></div>
+            <div class="pic_text">购物车</div>
+        </a>
+        <a href="#none" class="item" id="backTop">
+            <div class="pic pic6"></div>
+            <div class="pic_text">返回顶部</div>
+        </a>
+    </div>
+    <!-- 右侧悬浮工具栏 结束 -->
+    <div class="middle">
+        <!-- 小米闪购模块 -->
+        <div class="fast_shopping w">
+            <div class="part1">
+                <h2>小米闪购</h2>
+
+            </div>
+            <div class="part2">
+                <div class="part_first">
+                    <div id="box">
+                        <div class="txt">秒杀倒计时</div>
+                        <div class="countdown-desc">
+                            <strong></strong>点场 距结束</div>
+                        <div class="hour"></div>
+                        <!-- 小时与分钟之间的冒号 -->
+                        <span class="h_m">:</span>
+                        <div class="minute"></div>
+                        <!-- 分钟与秒之间的冒号 -->
+                        <span class="m_s">:</span>
+                        <div class="second"></div>
+                    </div>
+                </div>
+                <div id="demoin">
+                    <ul id="demo1">
+                        <a href="#">
+                            <li class="part_second">
+                                <div class="pic"><img src="images/middle_shopping_part2_2.png" alt=""></div>
+                                <div class="text1">
+                                    <p>小米降噪耳机 Pro FlipBuds Pro</p><span>主动降噪 超长续航</span>
+                                </div>
+                                <div class="text2">759元 <span>799元</span> </div>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="part_third">
+                                <div class="pic"><img src="images/middle_shopping_part2_3.png" alt=""></div>
+                                <div class="text1">
+                                    <p>Redmi AirDots 3 Pro</p><span>智能降噪 超低延迟</span>
+                                </div>
+                                <div class="text2">299元 <span>349元</span> </div>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="part_four">
+                                <div class="pic"><img src="images/middle_shopping_part2_4.png" alt=""></div>
+                                <div class="text1">
+                                    <p>小米手环6 NFC版</p><span>全屏实力</span>
+                                </div>
+                                <div class="text2">259元 <span>279元</span> </div>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="part_five">
+                                <div class="pic"><img src="images/middle_shopping_part2_5.png" alt=""></div>
+                                <div class="text1">
+                                    <p>Redmi 手表</p><span>35g超轻/1.4"大屏/多功能NFC/7天长续航</span>
+                                </div>
+                                <div class="text2">69元 <span>79元</span> </div>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul id="demo2"></ul>
+                </div>
+
+            </div>
+            <div class="part3">
+                <a href="#"><img src="images/middle_shopping_part3.jpg" alt=""></a>
+            </div>
+        </div>
+        <!-- 手机模块 -->
+        <div class="phone w">
+            <div class="part1">
+                <h2>手机</h2>
+                <a href="#">查看全部</a>
+            </div>
+            <div class="part2">
+                <div class="phone_left">
+                    <a href=""><img src="images/phone_part2_left.jpg" alt=""></a>
+                </div>
+                <ul class="phone_right">
+                    <li>
+                        <a href="#"><img src="images/middle_phone_right_pic1.jpg" alt="">
+                            <div class="text1">
+                                <p>Xiaomi Civi</p><span>Xiaomi Civi</span>
+                            </div>
+                            <div class="text2">2599元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_phone_right_pic2.jpg" alt="">
+                            <div class="text1">
+                                <p>Xiaomi MIX4</p><span>CUP全面屏</span>
+                            </div>
+                            <div class="text2">4999元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_phone_right_pic3.jpg" alt="">
+                            <div class="text1">
+                                <p>Note 10 Pro</p><span>天玑1100年度旗舰芯</span>
+                            </div>
+                            <div class="text2">1599元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_phone_right_pic4.jpg" alt="">
+                            <div class="text1">
+                                <p>Redmi Note 10 5G</p><span>5G小金刚 | 旗舰长续航</span>
+                            </div>
+                            <div class="text2">1099元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_phone_right_pic5.jpg" alt="">
+                            <div class="text1">
+                                <p>小米MIX FOLD</p><span>折叠大屏 | 自研芯片</span>
+                            </div>
+                            <div class="text2">9999元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_phone_right_pic6.jpg" alt="">
+                            <div class="text1">
+                                <p>小米11 Ultra</p><span>1/1.12"GN2 | 2K思维曲面</span>
+                            </div>
+                            <div class="text2">5499元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_phone_right_pic7.jpg" alt="">
+                            <div class="text1">
+                                <p>小米11 Pro</p><span>1/1.12"GN2 | 骁龙888</span>
+                            </div>
+                            <div class="text2">4499元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_phone_right_pic8.jpg" alt="">
+                            <div class="text1">
+                                <p>小米11 青春版</p><span>小米11 青春版 轻薄</span>
+                            </div>
+                            <div class="text2">2099元起 </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="part3">
+                <a href="#"><img src="images/middle_phone_part3.jpg" alt=""></a>
+            </div>
+        </div>
+        <!-- 家电模块 -->
+        <div class="home w">
+            <div class="part1">
+                <h2>家电</h2>
+                <div>
+                    <a href="#">热门</a>
+                    <a href="#">电视影音</a>
+                </div>
+
+            </div>
+            <div class="part2">
+                <ul class="home_left">
+                    <li>
+                        <a href="#"><img src="images/middle_home_part2_left_pic1.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_home_part2_left_pic2.jpg" alt=""></a>
+                    </li>
+                </ul>
+                <ul class="phone_right">
+                    <li>
+                        <a href="#"><img src="images/middle_home_part2_right_pic1.jpg" alt="">
+                            <div class="text1">
+                                <p>小米电视6 65” OLED</p><span>小米电视6 65” OLED</span>
+                            </div>
+                            <div class="text2">6999元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_home_part2_right_pic2.jpg" alt="">
+                            <div class="text1">
+                                <p>小米电视6 至尊版 65英寸</p><span>画质新境界</span>
+                            </div>
+                            <div class="text2">7799元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_home_part2_right_pic3.jpg" alt="">
+                            <div class="text1">
+                                <p>小米电视 ES55 2022款</p><span>多分区，画质轻旗舰</span>
+                            </div>
+                            <div class="text2">5299元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_home_part2_right_pic4.jpg" alt="">
+                            <div class="text1">
+                                <p>米家互联网对开门冰箱 540L</p><span>重磅新品福利特惠</span>
+                            </div>
+                            <div class="text2">2899元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_home_part2_right_pic5.jpg" alt="">
+                            <div class="text1">
+                                <p>米家超薄电磁炉</p><span>纤薄美学，精准猛火</span>
+                            </div>
+                            <div class="text2">479元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_home_part2_right_pic6.jpg" alt="">
+                            <div class="text1">
+                                <p>米家集尘扫拖机器人</p><span>自动倒垃圾，45天手不沾尘</span>
+                            </div>
+                            <div class="text2">2999元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_home_part2_right_pic7.jpg" alt="">
+                            <div class="text1">
+                                <p>Redmi全自动波轮洗衣机1A 8kg</p><span>一键操作，父母都爱用</span>
+                            </div>
+                            <div class="text2">799元起 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/middle_home_part2_right_pic8.jpg" alt="">
+                            <div class="text1">
+                                <p>小米小爱音箱Play</p><span>听音乐，语音遥控家电</span>
+                            </div>
+                            <div class="text2">99元起 </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="part3"><img src="images/middle_home_part3.jpg" alt=""></div>
+        </div>
+
+    </div>
+    <!-- 中间部分结束 -->
+
+
+
+    <!-- 结尾部分开始 -->
+    <div class="footer">
+        <!-- 服务模块 -->
+        <div class="tool w">
+            <div class="tool_header">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="pic"></div> 预约维修服务
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pic"></div> 7天无理由退货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pic"></div> 15天免费换货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pic"></div> 满99包邮
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pic"></div> 520余家售后网店
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tool_footer">
+                <ul class="col_links">
+                    <h3>帮助中心</h3>
+                    <li><a href="#"> 账户管理</a></li>
+                    <li><a href="#"> 购物指南</a></li>
+                    <li><a href="#"> 订单操作</a></li>
+                </ul>
+                <ul class="col_links">
+                    <h3>服务支持</h3>
+                    <li><a href="#"> 售后政策 </a></li>
+                    <li><a href="#"> 自助服务</a></li>
+                    <li><a href="#"> 相关下载</a></li>
+                </ul>
+                <ul class="col_links">
+                    <h3>线下门店</h3>
+                    <li><a href="#"> 小米之家</a></li>
+                    <li><a href="#"> 服务网点</a></li>
+                    <li><a href="#"> 授权体验店</a></li>
+                </ul>
+                <ul class="col_links">
+                    <h3>关于小米</h3>
+                    <li><a href="#"> 了解小米</a></li>
+                    <li><a href="#"> 加入小米</a></li>
+                    <li><a href="#"> 投资者关系</a></li>
+                    <li><a href="#"> 企业社会责任</a></li>
+                    <li><a href="#"> 廉洁举报</a></li>
+                </ul>
+                <ul class="col_links">
+                    <h3>关注我们</h3>
+                    <li><a href="#"> 新浪微博</a></li>
+                    <li><a href="#"> 官方微信</a></li>
+                    <li><a href="#"> 联系我们</a></li>
+                    <li><a href="#"> 公益基金会</a></li>
+                </ul>
+                <ul class="col_links">
+                    <h3>特色服务</h3>
+                    <li><a href="#"> F码通道</a></li>
+                    <li><a href="#"> 礼物码</a></li>
+                    <li><a href="#"> 防伪查询</a></li>
+                </ul>
+                <div class="col_links col_links_last">
+                    <p class="phone">400-100-5678</p>
+                    <p class="phone_time">8:00-18:00 (仅收市话费)</p>
+                    <a href="#"><span> 人工客服</span></a>
+                    <div><span> 关注小米：</span>
+                        <a href="#"><img src="images/footer_logo_xinlang.png" alt=""></a>
+                        <a href="#"><img src="images/footer_logo_weixin.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 版权信息模块 -->
+        <div class="info middle ">
+            <div class="info_header w">
+                <div class="info_left">
+                    <div class="logo"></div>
+                </div>
+                <div class="info_logo_text">
+                    <p class="info_logo_text1">
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a> <span>|</span>
+                        <a href="#">小米商城</a>
+                    </p>
+                    <p class="info_logo_text2">
+                        © <a href="">mi.com</a> 京ICP证110507号 <a href="#">京ICP备10046444号</a> <a href="#">京公网安备11010802020134号</a> <a href="#">京网文[2020]0276-042号</a> <br>
+                        <a href="#">（京）网械平台备字（2018）第00005号</a> <a href="#">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a> <a href="#">营业执照</a> <a href="#">医疗器械质量公告</a> <br>
+                        <a href="#">增值电信业务许可证</a> 网络食品经营备案 京食药网食备202010048 <a href="#">食品经营许可证</a> <br> 违法和不良信息举报电话：171-5104-4404 <a href="#">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                    </p>
+                </div>
+            </div>
+            <div class="info_middle ">
+                <img src="images/footer_middle_pic1.png" alt="" class="pic_first">
+                <img src="images/footer_middle_pic2.png" alt="">
+                <img src="images/footer_middle_pic3.png" alt="">
+                <img src="images/footer_middle_pic4.png" alt="">
+                <img src="images/footer_middle_pic5.png" alt="" class="pic_last">
+            </div>
+            <div class="info_footer"><img src="images/footer-word.png" alt=""></div>
+        </div>
+    </div>
+    <!-- 结尾部分结束 -->
+    <script src="./js/jquery-2.2.4.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        let btnObj = document.querySelector('.btn-primary');
+        // console.log(btnObj);
+        btnObj.addEventListener('click', function() {
+            window.location.href = './login.html';
+        });
+    </script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script>
+        let userObj = document.querySelector('.users');
+        //获取地址栏信息，给商品页面加载内容
+        let url = location.search;
+        if (url == '') {
+            userObj.childNodes[1].innerHTML = '请登录'
+        } else {
+            let users = GetQueryString('user');
+            users = decodeURI(users);
+            // users = GetQueryString(users);
+            userObj.childNodes[1].innerHTML = users;
+        }
+        // console.log(url == '');
+        // 利用正则表达式方式，获取地址栏中的的参数值
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null)
+                return unescape(r[2]);
+            return null;
+        }
+    </script>
+
+</body>
+
+</html>

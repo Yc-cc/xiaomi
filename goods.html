@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index_style.css">
+    <link rel="stylesheet" href="./css/goods.css">
+
+    <title>小米商城-商品信息</title>
+</head>
+
+<body>
+
+    <!-- 头部部分开始 -->
+    <div class="header">
+        <!-- 头部中间部分的列表 -->
+        <div class="header_middle">
+            <div class="w">
+                <ul>
+                    <li><a href="index.html">小米商城</a></li>
+                    <li><a href="#none">MIUI</a></li>
+                    <li><a href="#none">IOT</a></li>
+                    <li><a href="#none">云服务</a></li>
+                    <li><a href="#none">金融</a></li>
+                    <li><a href="#none">有品</a></li>
+                    <li><a href="#none">小爱开放平台</a></li>
+                    <li><a href="#none">企业团购</a></li>
+                    <li><a href="#none">资质证照</a></li>
+                    <li><a href="#none">协议规则</a></li>
+                    <li><a href="#none">下载APP</a></li>
+                    <li><a href="#none">智能生活</a></li>
+                    <li><a href="#none">Select Location</a></li>
+                    <li class="right"><a href="register.html">登录</a></li>
+                    <li><a href="login.html">注册</a></li>
+                    <li><a href="message.html">消息通知</a></li>
+                    <li class="shopping"><a href="shopping.html">购物车<span class="shopNum">0</span></a>
+                        <div class="shopHide">
+                            <ul class="hideUl">
+                                <!-- <li class="hideLi">
+                                    <img src="" alt=""><span class="hideName"></span><span class="hideRam"></span><span class="hideColor"></span><span class="hidePrice"></span><span class="hideNum"></span>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- 头部logo部分 -->
+        <div class="top_logo w">
+            <a href="index.html" class="logo"></a>
+            <ul class="list">
+                <li><a href="#none">小米手机</a>
+                    <div class="item-children">
+                        <div class="container">
+                            <ul class="children-list clearfix">
+                                <li>
+                                    <a href="goods.html?src=./images/shop1.jpg;name=Xiaomi Civi;price=2599">
+                                        <div class="figure figure-thumb"><img src="./images/item.jpg" alt="Xiaomi Civi" width="160" height="110"></div>
+                                        <div class="title">Xiaomi Civi</div>
+                                        <p class="price">2599元起</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop2.jpg;name=Xiaomi MIX 4;price=4999">
+                                        <div class="figure figure-thumb"><img src="./images/item2.jpg" alt="Xiaomi MIX 4" width="160" height="110"></div>
+                                        <div class="title">Xiaomi MIX 4</div>
+                                        <p class="price">4999元起</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop3.jpg;name=Xiaomi MIX FOLD;price=9999">
+                                        <div class="figure figure-thumb"><img src="./images/item3.jpg" alt="小米MIX FOLD" width="160" height="110"></div>
+                                        <div class="title">小米MIX FOLD</div>
+                                        <p class="price">9999元起</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop4.jpg;name=Xiaomi 11 Ultra;price=5499">
+                                        <div class="figure figure-thumb"><img src="./images/item4.jpg" alt="小米11 Ultra" width="160" height="110"></div>
+                                        <div class="title">小米11 Ultra</div>
+                                        <p class="price">5499元起</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop5.jpg;name=Xiaomi 11 Pro;price=4499">
+                                        <div class="figure figure-thumb"><img src="./images/item5.jpg" alt="小米11 Pro" width="160" height="110"></div>
+                                        <div class="title">小米11 Pro</div>
+                                        <p class="price">4499元起</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="goods.html?src=./images/shop6.jpg;name=Xiaomi 11 youngth;price=2099">
+                                        <div class="figure figure-thumb"><img src="./images/item6.jpg" alt="小米11 青春版" width="160" height="110"></div>
+                                        <div class="title">小米11 青春版</div>
+                                        <p class="price">2099元起</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#none">Redmi红米</a></li>
+                <li><a href="#none">电视</a></li>
+                <li><a href="#none">笔记本</a></li>
+                <li><a href="#none">家电</a></li>
+                <li><a href="#none">路由器</a></li>
+                <li><a href="#none">智能硬件</a></li>
+                <li><a href="#none">服务</a></li>
+                <li><a href="#none">社区</a></li>
+            </ul>
+            <a href="#none" class="search_btn"></a>
+            <div class="search">
+                <input type="search" value="搜一下吧" class="search-text">
+            </div>
+
+        </div>
+        <!-- 二号导航条 -->
+        <div class="nav-bar" id="fixed">
+            <div class="container">
+                <h2 class="proj-name" id="shopName"></h2>
+                <div class="right">
+                    <a href="" class="cur">概述</a>
+                    <span class="separator">|</span>
+                    <a href="">参数</a>
+                    <span class="separator">|</span>
+                    <a href="">图集</a>
+                    <span class="separator">|</span>
+                    <a href="">F码通道</a>
+                    <span class="separator">|</span>
+                    <a href="">用户评价</a>
+                    <a href="./shopping.html" class="buy-now">结算</a>
+                </div>
+            </div>
+        </div>
+        <!-- 一号导航条 -->
+        <div class="nav-bar" id="static">
+            <div class="container">
+                <h2 class="proj-name" id="shopName"></h2>
+                <div class="right">
+                    <a href="" class="cur">概述</a>
+                    <span class="separator">|</span>
+                    <a href="">参数</a>
+                    <span class="separator">|</span>
+                    <a href="">图集</a>
+                    <span class="separator">|</span>
+                    <a href="">F码通道</a>
+                    <span class="separator">|</span>
+                    <a href="./shopping.html" class="buy-now">结算</a>
+                </div>
+            </div>
+        </div>
+        <!-- 头部app部分 -->
+        <div class="top_app w">
+            <div class="container">
+                <!-- <h2 id='shopName'></h2> -->
+                <div class="con">
+                    <!-- <div class="left"><span class="separator">|</span> </div>
+                    <div class="right"><a href="#none">概述页</a> <span class="separator">|</span> <a href="#none">参数页</a> <span class="separator">|</span> <a href="#none">F码通道</a> <span class="separator">|</span> <a href="#none">咨询客服</a> <span class="separator">|</span>
+                    </div> -->
+                    <div class="main">
+                        <div class="big_box" id="big_box">
+                            <div class="small" id="small">
+                                <img id="shopSrc" class="shopSrc changSmall" src="./images/shop1.jpg" width="350" alt="" />
+                                <div class="mask" id="mask"></div>
+                            </div>
+                            <div class="big" id="big">
+                                <img class="shopSrc changSmall" src="./images/shop1.jpg" width="800" alt="" id="bimg" />
+                            </div>
+                            <div class="shopList" id="shopSrc">
+                                <div class="shopListL">
+                                    <img src="./images/cycle-left.png" alt="">
+                                </div>
+                                <div id="smallImg">
+                                    <ul class="smallUl" style="left: 0px;">
+                                        <li class="checked"><img src="./images/shop1.jpg" alt=""></li>
+                                        <li><img src="./images/shop4.jpg" alt=""></li>
+                                        <li><img src="./images/shop2.jpg" alt=""></li>
+                                        <li><img src="./images/shop1.jpg" alt=""></li>
+                                        <li><img src="./images/shop3.jpg" alt=""></li>
+                                        <li><img src="./images/shop1.jpg" alt=""></li>
+                                        <li><img src="./images/shop4.jpg" alt=""></li>
+                                        <li><img src="./images/shop1.jpg" alt=""></li>
+                                        <li><img src="./images/shop5.jpg" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="shopListR">
+                                    <img src="./images/cycle-right.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-con">
+                            <h2 id="shopName">Xiaomi Civi</h2>
+                            <br>
+                            <p class="sale-desc">
+                                <font color="#ff4a00">「购机可享6期免息；评价晒单前5000名送Xiaomi Civi 马卡龙色系硅胶保护壳；购机享碎屏保、延保5折」</font>轻薄潮流设计 | 丝绒AG工艺 | 原生美肌人像 | 像素级肌肤焕新技术 | 3200万高清质感自拍 | 双柔光灯+自动对焦 | 3D曲面OLED柔性屏 | 120Hz+Dolby Vision | 4500mAh 大电量 | 55W有线闪充 | 立体声双扬声器 | 多功能NFC</p>
+                            <p class="company-info">小米自营</p>
+                            <div class="price-info"><span class="shopPric">2599</span>元</div>
+
+                            <div class="line"></div>
+
+                            <div class="address-box">
+                                <div class="product-address"><i class="iconfont iconfont-location"></i>
+                                    <div class="address-con">
+                                        <div>
+                                            <div class="address-info"><span>北京</span><span>北京市</span><span>海淀区</span><span>清河街道</span></div><a href="#none" class="edit">修改</a></div>
+                                        <div class="info">
+                                            <div class="desc"><span>有现货</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buy-option">
+                                <div class="buy-box-child1">
+                                    <div class="option-box">
+                                        <div class="title">选择版本</div>
+                                        <ul class="clearfixs Ram">
+                                            <li title="8GB+128GB" class="yc">8GB+128GB</li>
+                                            <li title="12GB+256GB" class="">12GB+256GB</li>
+                                            <li title="8GB+256GB" class="">8GB+256GB</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="buy-box-child2">
+                                    <div class="option-box">
+                                        <div class="title">选择颜色</div>
+                                        <ul class="clearfixs Color">
+                                            <li title="闪闪黑" class="yc">闪闪黑</li>
+                                            <li title="轻轻蓝" class="">轻轻蓝</li>
+                                            <li title="怦怦粉" class="">怦怦粉</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="batch-box">
+                                    <div class="title">选择套装</div>
+                                    <ul class="clearfixs">
+                                        <li class="yc">标准版</li>
+                                        <li class="">套装版（赠充电器）</li>
+                                    </ul>
+                                </div>
+                                <div class="batch-box">
+                                    <div class="title">选择数量</div>
+                                    <ul class="clearfix-number">
+                                        <a href="#none"><button class="jian">-</button></a>
+                                        <input type="text" name="" id="total-number" value="1">
+                                        <a href="#none"><button class="jia">+</button></a>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="selected-list">
+                                <ul>
+                                    <li><span id="shopName"></span> <span id="shopRam">8GB+128GB</span> <span id="shopColor">闪闪黑</span><span class="shopPric">2599元</span></li>
+                                </ul>
+                                <div class="total-price">总计：<span id="shopPrice" class="shopPric">2599</span> 元</div>
+                            </div>
+                            <div class="btn-box">
+                                <div class="sale-btn"><a href="./message.html" class="btn btn-primary">加入购物车</a>
+
+                                </div>
+                                <div class="favorite-btn"><a class="btn-gray btn-like">喜欢</a></div>
+                            </div>
+                            <div class="after-sale-info"><span><a href="#none" class="support"><em>小米自营</em></a></span><span><a href="#none" title="由小米发货" class="support"><em>小米发货</em></a></span>
+                                <span><a href="#none" class="support"><em>7天无理由退货</em></a></span><span><a href="#none" title="由小米发货商品(不含有品),单笔满69元免运费;
+                        " class="support"><em>企业信息</em></a></span>
+                                <span><a href="#none" target="_blank" class="support"><em>7天价格保护</em></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 头部部分结束 -->
+        <!-- 右侧悬浮工具栏 开始-->
+        <div class="right_float">
+            <a href="#none" class="item">
+                <div class="pic pic1"></div>
+                <div class="pic_text">手机APP</div>
+            </a>
+            <a href="#none" class="item">
+                <div class="pic pic2"></div>
+                <div class="pic_text">个人中心</div>
+            </a>
+            <a href="#none" class="item">
+                <div class="pic pic3"></div>
+                <div class="pic_text">售后服务</div>
+            </a>
+            <a href="#none" class="item">
+                <div class="pic pic4"></div>
+                <div class="pic_text">人工客服</div>
+            </a>
+            <a href="shopping.html" class="item">
+                <div class="pic pic5"></div>
+                <div class="pic_text">购物车</div>
+            </a>
+        </div>
+        <!-- 评价模块 -->
+        <div class="comment-mid">
+            <div class="mid-left">
+                <div class="l-top">
+                    <div class="t-title">热门评价</div>
+                    <div class="t-choose"><input type="checkbox">只显示图片评价</div>
+                </div>
+                <div class="l-content">
+                    <div class="comps">
+                        <div class="common">
+                            <div class="top">
+                                <a href="javascript:void(0);" class="port"><img id="talImg" src=""></a>
+                                <div class="timea"><a href="javascript:void(0);" class="tit">101*****53</a>
+                                    <div class="times">2021-10-07</div>
+                                </div>
+                                <div class="lovea">超爱</div>
+                            </div>
+                            <a href="#none" class="des">希望出白色款式好轻 好用拍照效果很好～</a>
+                            <div class="images clearfix">
+                                <div class="image big"><img id="talImg" src="" style="width: auto; height: 100%; left: -55.5069px;"></div>
+                            </div>
+                            <div class="reply"><input type="text" placeholder="回复楼主" class="input J_reply_input">
+                                <div class="btn replyBtn" onclick="repAdd()" repId="0">回复</div>
+                            </div>
+                            <div class="commentList" comId="0">
+                                <!-- <div class="comments">
+                                    <a href="javascript:void(0);"><img src="" ></a>
+                                    <div class="c-right"><a href="javascript:void(0);" class="c-t">Yc</a>
+                                        <div class="c-b"><span>。。。</span></div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more" id="more">
+                    加载更多
+                </div>
+            </div>
+            <div class="mid-right">
+                <div class="m-t"><span>1582</span>人购买后满意
+                </div>
+                <div class="m-b"><i style="width: 99.2%;"><span>满意度：99.2%</span></i></div>
+            </div>
+            <div class="goTop" id="goTop"></div>
+        </div>
+        <!-- 右侧悬浮工具栏 结束 -->
+        <div class="footer">
+            <!-- 服务模块 -->
+            <div class="tool w">
+                <div class="tool_header">
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <div class="pic"></div> 预约维修服务
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="pic"></div> 7天无理由退货
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="pic"></div> 15天免费换货
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="pic"></div> 满99包邮
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="pic"></div> 520余家售后网店
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tool_footer">
+                    <ul class="col_links">
+                        <h3>帮助中心</h3>
+                        <li><a href="#none"> 账户管理</a></li>
+                        <li><a href="#none"> 购物指南</a></li>
+                        <li><a href="#none"> 订单操作</a></li>
+                    </ul>
+                    <ul class="col_links">
+                        <h3>服务支持</h3>
+                        <li><a href="#none"> 售后政策 </a></li>
+                        <li><a href="#none"> 自助服务</a></li>
+                        <li><a href="#none"> 相关下载</a></li>
+                    </ul>
+                    <ul class="col_links">
+                        <h3>线下门店</h3>
+                        <li><a href="#none"> 小米之家</a></li>
+                        <li><a href="#none"> 服务网点</a></li>
+                        <li><a href="#none"> 授权体验店</a></li>
+                    </ul>
+                    <ul class="col_links">
+                        <h3>关于小米</h3>
+                        <li><a href="#none"> 了解小米</a></li>
+                        <li><a href="#none"> 加入小米</a></li>
+                        <li><a href="#none"> 投资者关系</a></li>
+                        <li><a href="#none"> 企业社会责任</a></li>
+                        <li><a href="#none"> 廉洁举报</a></li>
+                    </ul>
+                    <ul class="col_links">
+                        <h3>关注我们</h3>
+                        <li><a href="#none"> 新浪微博</a></li>
+                        <li><a href="#none"> 官方微信</a></li>
+                        <li><a href="#none"> 联系我们</a></li>
+                        <li><a href="#none"> 公益基金会</a></li>
+                    </ul>
+                    <ul class="col_links">
+                        <h3>特色服务</h3>
+                        <li><a href="#none"> F码通道</a></li>
+                        <li><a href="#none"> 礼物码</a></li>
+                        <li><a href="#none"> 防伪查询</a></li>
+                    </ul>
+                    <div class="col_links col_links_last">
+                        <p class="phone">400-100-5678</p>
+                        <p class="phone_time">8:00-18:00 (仅收市话费)</p>
+                        <a href="#none"><span> 人工客服</span></a>
+                        <div><span> 关注小米：</span>
+                            <a href="#none"><img src="images/footer_logo_xinlang.png" alt=""></a>
+                            <a href="#none"><img src="images/footer_logo_weixin.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 版权信息模块 -->
+            <div class="info middle ">
+                <div class="info_header w">
+                    <div class="info_left">
+                        <div class="logo"></div>
+                    </div>
+                    <div class="info_logo_text">
+                        <p class="info_logo_text1">
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a> <span>|</span>
+                            <a href="#none">小米商城</a>
+                        </p>
+                        <p class="info_logo_text2">
+                            © <a href="">mi.com</a> 京ICP证110507号 <a href="#none">京ICP备10046444号</a> <a href="#none">京公网安备11010802020134号</a> <a href="#none">京网文[2020]0276-042号</a> <br>
+                            <a href="#none">（京）网械平台备字（2018）第00005号</a> <a href="#none">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a> <a href="#none">营业执照</a> <a href="#none">医疗器械质量公告</a> <br>
+                            <a href="#none">增值电信业务许可证</a> 网络食品经营备案 京食药网食备202010048 <a href="#none">食品经营许可证</a> <br> 违法和不良信息举报电话：171-5104-4404 <a href="#none">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                        </p>
+                    </div>
+                </div>
+                <div class="info_middle ">
+                    <img src="images/footer_middle_pic1.png" alt="" class="pic_first">
+                    <img src="images/footer_middle_pic2.png" alt="">
+                    <img src="images/footer_middle_pic3.png" alt="">
+                    <img src="images/footer_middle_pic4.png" alt="">
+                    <img src="images/footer_middle_pic5.png" alt="" class="pic_last">
+                </div>
+                <div class="info_footer"><img src="images/footer-word.png" alt=""></div>
+            </div>
+        </div>
+        <script>
+            //获取地址栏信息，给商品页面加载内容
+            function getUrlParam() {
+                var url = location.search; //获取url中"?"符后的字串
+                var theRequest = new Object();
+                if (url.indexOf("?") != -1) {
+                    var str = url.substr(1);
+                    strs = str.split(";");
+                    for (var i = 0; i < strs.length; i++) {
+                        theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                    }
+                }
+                return theRequest;
+            }
+            var Request = new Object();
+            Request = getUrlParam();
+            let name = Request['name'];
+            let srca = Request['src'];
+            let pricea = Request['price'];
+            let nameObj = document.querySelectorAll('#shopName');
+            //商品的信息加载
+            nameObj.forEach(v => {
+                v.innerHTML = name;
+            });
+            let srcObj = document.querySelectorAll('.shopSrc');
+            srcObj.forEach(v => {
+                v.src = srca;
+            });
+            let pricObj = document.querySelectorAll('.shopPric');
+            pricObj.forEach(v => {
+                v.innerHTML = pricea;
+            });
+            // console.log(name, srca, pricea);
+        </script>
+        <script src="./js/axios.js"></script>
+        <script type="text/javascript" src="./js/goods.js"></script>
+</body>
+
+</html>

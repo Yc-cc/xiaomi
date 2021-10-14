@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <title>小米账号-注册</title>
+</head>
+
+<body>
+    <!-- 首部部分 start-->
+    <div class="regLeft">
+        <img src="./images/register.jpg" alt="">
+    </div>
+    <div class="regRight">
+        <div class="top">
+            <!-- <a href="index.html" class="title"></a>
+            <h4>注册小米账号</h4> -->
+            <div class="mi-header">
+                <div class="mi-title">
+                    <a href="./index.html"><img src="./images/mi-logo.png" alt=""></a> 注册小米账号
+                </div>
+                <div class="mi-nav"><a class="mi-nav__item mi-external-url" href="/about/protocol/agreement">用户协议</a><a class="mi-nav__item mi-external-url" href="/about/protocol/privacy">隐私政策</a><a class="mi-nav__item mi-external-url" href="/helpcenter">帮助中心</a>
+                    <div class="mi-nav__divider"></div>
+                    <div class="mi-nav__item">
+                        <div class="mi-language-picker ant-dropdown-trigger">‎中文(简体)‎ <svg width="14" height="14" class="mi-language-picker__icon"><path d="M10.732 5H3.268c-.224 0-.349.245-.21.413l3.732 4.49a.277.277 0 00.42 0l3.732-4.49c.139-.168.014-.413-.21-.413z" fill="currentColor" fill-rule="nonzero"></path></svg></div>
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <form enctype="multipart/form-data">
+                    <div class="middleBox" style="width:500px;margin:0 auto;">
+                        <br />
+                        <span class="p">*</span>
+                        <label for="username" class="l">用户名:</label>
+                        <div id="data-user" data-content="用户名不合法" data-placement="right" style="position:relative;display:inline;">
+                            <input id="username" type="text" style="height:30px;width:300px;padding-right:50px;">
+                        </div>
+                        <br /><br />
+                        <span class="c">*</span>
+                        <label for="login_password" class="l">登录密码:</label>
+                        <div id="data-pwd" class="d" data-toggle="popover" data-content="密码格式有误">
+                            <input id="login_password" type="password" class="i">
+                        </div>
+                        <br /><br />
+                        <span class="c">*</span>
+                        <label for="confirm_password" class="l">确认密码:</label>
+                        <div id="data-repwd" class="d" data-toggle="popover" data-content="两次密码不相同">
+                            <input id="confirm_password" type="password" class="i">
+                        </div>
+                        <br /><br />
+                        <input id="agreeInp" type="checkbox" name="agree" style="margin-left:100px;display:inline-block;" value="1" />
+                        <span style="font-size:10px;">我已阅读并同意《用户注册协议》</span>
+                        <br /><br />
+                        <button id="newBtn" type="button" style="margin-left:100px;height:30px;width:300px;background-color:#FF6700;display:inline-block; border:none;color:white;font-size: 14px;">登录</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!-- 尾部部分 start -->
+        <div class="footer">
+            <ul>
+                <li><a href="#">简体</a><span>|</span></li>
+                <li><a href="#">繁体</a><span>|</span></li>
+                <li><a href="#">English</a><span>|</span></li>
+                <li><a href="#">常见问题</a><span>|</span></li>
+                <li><a href="#">隐私政策</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 首部部分 end -->
+
+
+    <!-- 尾部部分 end -->
+    <script src="./js/jquery-2.2.4.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./layer/layer.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

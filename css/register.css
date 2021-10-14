@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    display: block;
+    width: 1130px;
+    height: 98px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-image: url(../images/mi-logo.png);
+    background-color: #FF6700;
+    background-position: 50%;
+    border-radius: 25%;
+    background-size: 100%;
+    margin-top: 20px;
+}
+
+.logo_text {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.logo_text h2 {
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.logo_text p {
+    margin-top: 5px;
+    font-size: 6px;
+}
+
+
+/* 中间部分开始 */
+
+.middle {
+    position: relative;
+    height: 588px;
+    background-image: url(../images/register_middle_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.user {
+    position: absolute;
+    top: 35px;
+    right: 190px;
+    width: 410px;
+    height: 556px;
+    background-color: white;
+}
+
+.user_header {
+    height: 82px;
+    text-align: center;
+    line-height: 82px;
+}
+
+.user_header a {
+    padding: 27px 0 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+}
+
+.user_header a:hover {
+    color: #FF6700;
+}
+
+.user .mi-sns-login__title {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: #aaa;
+    line-height: 40px;
+}
+
+.user .mi-sns-login__content {
+    height: 46px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.user .mi-sns-login__list {
+    text-align: center;
+    width: 100%;
+}
+
+.user .mi-sns-login__item {
+    display: inline-block;
+    width: 46px;
+    margin: 0 12px;
+}
+
+.user .mi-sns-login__icon {
+    display: block;
+    margin: 0 auto;
+    font-size: 46px;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    overflow: hidden;
+}
+
+.line {
+    width: 1px;
+    height: 24px;
+    margin: 0 35px 0 42px;
+    border: 1px solid #e0e0e0;
+    background: #e0e0e0;
+}
+
+.user_middle input {
+    color: #686868;
+    width: 306px;
+    height: 25px;
+    border: 1px solid #e0e0e0;
+    padding: 13px 16px 13px 14px;
+    margin: 0 0 20px 35px;
+}
+
+.user_middle>button {
+    display: block;
+    width: 308px;
+    height: 50px;
+    background-color: #FF6700;
+    padding: 13px 16px 13px 14px;
+    margin: 0 0 15px 35px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+    border: none;
+}
+
+.user_middle li {
+    width: 308px;
+    padding-bottom: 35px;
+    margin: 0 0 0 45px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.user_middle li a {
+    color: #757575;
+}
+
+.user_middle li a:hover {
+    color: #FF6700;
+}
+
+.user_footer img {
+    margin: 80px 0 0 80px;
+}
+
+.footer {
+    display: block;
+    height: 30px;
+    margin: 100px 0 0 600px;
+}
+
+.footer li {
+    float: left;
+}
+
+.footer li a,
+.footer li span {
+    color: #757575;
+    font-size: 14px;
+}
+
+.footer li a {
+    display: inline-block;
+    height: 19px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.footer li a:hover {
+    color: #FF6700;
+}
